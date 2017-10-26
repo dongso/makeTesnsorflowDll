@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6D640BFF-2FEB-41B0-BCC1-B6BF53298DDD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>tesnsorTest</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\temp\tensorflow;D:\temp\tensorflow\tensorflow\contrib\cmake\build;D:\temp\tensorflow\tensorflow\contrib\cmake\build\external\zlib_archive;D:\temp\tensorflow\tensorflow\contrib\cmake\build\external\gif_archive\giflib-5.1.4;D:\temp\tensorflow\tensorflow\contrib\cmake\build\external\png_archive;D:\temp\tensorflow\tensorflow\contrib\cmake\build\external\jpeg_archive;D:\temp\tensorflow\tensorflow\contrib\cmake\build\external\lmdb;D:\temp\tensorflow\tensorflow\contrib\cmake\build\external\eigen_archive;D:\temp\tensorflow\third_party\eigen3;D:\temp\tensorflow\tensorflow\contrib\cmake\build\gemmlowp\src\gemmlowp;D:\temp\tensorflow\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp;D:\temp\tensorflow\tensorflow\contrib\cmake\build\external\farmhash_archive;D:\temp\tensorflow\tensorflow\contrib\cmake\build\external\farmhash_archive\util;D:\temp\tensorflow\tensorflow\contrib\cmake\build\external\highwayhash;D:\temp\tensorflow\tensorflow\contrib\cmake\build\cub\src\cub;D:\temp\tensorflow\tensorflow\contrib\cmake\build\external\nsync\public;D:\temp\tensorflow\tensorflow\contrib\cmake\build\protobuf\src\protobuf\src;D:\temp\tensorflow\tensorflow\contrib\cmake\build\re2\install\include;D:\temp\tensorflow\tensorflow\contrib\cmake\build\external\sqlite;D:\temp\tensorflow\tensorflow\contrib\cmake\build\grpc\src\grpc\include;D:\temp\tensorflow\tensorflow\contrib\cmake\build\snappy\src\snappy;C:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\opencv\build\x64\vc14\lib;D:\temp\tensorflow\tensorflow\contrib\cmake\build\protobuf\src\protobuf\Release;D:\temp\tensorflow\tensorflow\contrib\cmake\build\tf_cc.dir\Release;D:\temp\tensorflow\tensorflow\contrib\cmake\build\tf_cc_ops.dir\Release;D:\temp\tensorflow\tensorflow\contrib\cmake\build\tf_cc_framework.dir\Release;D:\temp\tensorflow\tensorflow\contrib\cmake\build\tf_core_cpu.dir\Release;D:\temp\tensorflow\tensorflow\contrib\cmake\build\tf_core_direct_session.dir\Release;D:\temp\tensorflow\tensorflow\contrib\cmake\build\tf_core_framework.dir\Release;D:\temp\tensorflow\tensorflow\contrib\cmake\build\tf_core_kernels.dir\Release;D:\temp\tensorflow\tensorflow\contrib\cmake\build\tf_core_lib.dir\Release;D:\temp\tensorflow\tensorflow\contrib\cmake\build\tf_core_ops.dir\Release;D:\temp\tensorflow\tensorflow\contrib\cmake\build\Release;D:\temp\tensorflow\tensorflow\contrib\cmake\build\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Release\tf_protos_cc.lib;zlib\install\lib\zlibstatic.lib;gif\install\lib\giflib.lib;png\install\lib\libpng12_static.lib;jpeg\install\lib\libjpeg.lib;lmdb\install\lib\lmdb.lib;jsoncpp\src\jsoncpp\src\lib_json\$(Configuration)\jsoncpp.lib;farmhash\install\lib\farmhash.lib;fft2d\\src\lib\fft2d.lib;highwayhash\install\lib\highwayhash.lib;nsync\install\lib\nsync.lib;protobuf\src\protobuf\$(Configuration)\libprotobuf.lib;re2\src\re2\$(Configuration)\re2.lib;sqlite\install\lib\sqlite.lib;grpc\src\grpc\Release\grpc++_unsecure.lib;grpc\src\grpc\Release\grpc_unsecure.lib;grpc\src\grpc\Release\gpr.lib;snappy\src\snappy\$(Configuration)\snappy.lib;wsock32.lib;ws2_32.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libprotobuf.lib;tf_protos_cc.lib;tf_cc.lib;tf_cc_ops.lib;tf_cc_framework.lib;tf_core_cpu.lib;tf_core_direct_session.lib;tf_core_framework.lib;tf_core_kernels.lib;tf_core_lib.lib;tf_core_ops.lib;opencv_world310.lib</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4049 /ignore:4197 /ignore:4217 /ignore:4221  /WHOLEARCHIVE:tf_cc_framework.lib /WHOLEARCHIVE:tf_cc_ops.lib /WHOLEARCHIVE:tf_core_cpu.lib /WHOLEARCHIVE:tf_core_direct_session.lib /WHOLEARCHIVE:tf_core_framework.lib /WHOLEARCHIVE:tf_core_kernels.lib /WHOLEARCHIVE:tf_core_lib.lib /WHOLEARCHIVE:tf_core_ops.lib /WHOLEARCHIVE:tf_stream_executor.lib /WHOLEARCHIVE:libjpeg.lib</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="example_trainer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tensorJK.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
